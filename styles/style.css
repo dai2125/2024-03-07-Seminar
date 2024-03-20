@@ -1,0 +1,172 @@
+/*html {*/
+/*    font-size: 12px; !* px means "pixels": the base font size is now 10 pixels high *!*/
+/*    font-family: "Open Sans", sans-serif; !* this should be the rest of the output you got from Google Fonts *!*/
+/*}*/
+
+/*button {*/
+/*    font-size: 12px;*/
+/*    font-family: "Open Sans", sans-serif;*/
+/*}*/
+
+/*h1 {*/
+/*    font-size: 18px;*/
+/*    font-family: "Open Sans", sans-serif;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*h2 {*/
+/*    font-size: 20px;*/
+/*    font-family: "Open Sans", sans-serif;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*label {*/
+/*    font-size: 12px;*/
+/*    font-family: "Open Sans", sans-serif;*/
+/*}*/
+
+/*!* Grundlegendes Styling für Todo-Items *!*/
+/*.todo-item {*/
+/*    cursor: pointer;*/
+/*    border: 1px solid #ccc;*/
+/*    margin-bottom: 5px;*/
+/*    padding: 10px;*/
+/*}*/
+
+/*!* Visuelle Rückmeldung für geklickte/gecheckte Items *!*/
+/*.todo-item.checked {*/
+/*    background-color: #e9ecef;*/
+/*    text-decoration: line-through;*/
+/*    color: #adb5bd;*/
+/*}*/
+
+/* Grundstil */
+html {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004094;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+label {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Spezifisches Styling */
+.todo-item {
+    border: none;
+    margin-bottom: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.todo-item:hover {
+    transform: scale(1.02);
+}
+
+.todo-item.checked {
+    background-color: #adb5bd;
+    /*text-decoration: line-through;*/
+    color: #333333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    section {
+        width: 100%;
+    }
+}
+
+/* Erweiterung des Grundstils für Todo-Items */
+.todo-item h2 {
+    font-size: 1.25rem; /* Größere Schriftgröße für die Überschrift */
+    color: #333; /* Dunklere Schriftfarbe für bessere Lesbarkeit */
+    margin: 0 0 10px 0; /* Abstand nach unten, um Text von der Überschrift zu trennen */
+    padding: 0; /* Kein zusätzliches Padding nötig, kann aber nach Bedarf angepasst werden */
+}
+
+/* Stil für durchgestrichene Überschriften bei "gecheckten" Todo-Items */
+.todo-item.checked h2 {
+    /*text-decoration: line-through; !* Durchstreichen, um erledigte Aufgaben zu kennzeichnen *!*/
+    color: #adb5bd; /* Farbe ändern, um den erledigten Status zu verdeutlichen */
+}
+
+.todo-item p {
+    font-size: 1rem;
+    color: #666; /* Dunkelgrau für den Textkörper, um Lesbarkeit zu verbessern */
+    margin: 0;
+    word-break: break-word;
+}
+
+.todo-item.checked p {
+    color: aquamarine;
+}

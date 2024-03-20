@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet" />
+    <title>Todo List</title>
+</head>
+
+<body>
+<section>
+    <h1>Message Board</h1><br>
+    <button id="addMessageButton">ADD MESSAGE</button>
+    <button id="messageButton">MESSAGES</button>
+</section>
+
+<section id="sectionFirstPage">
+    <form id="form">
+        <label>Subject</label>
+        <input type="text" required minlength="1" name="subject" id="subject"><br>
+
+        <label>Body</label>
+        <input type="text" required minlength="1" name="body" id="body"><br>
+        <button id="submitButton">Submit</button>
+    </form>
+</section>
+
+<section id="sectionSecondPage">
+    <ul id="listLabel"></ul>
+    <ul id="list"></ul>
+</section>
+
+<!--<section id="secondPage">-->
+<!--    <ul id="listLabel" style.display="hidden"></ul>-->
+<!--    <ul id="list" style.display="hidden"></ul>-->
+<!--</section>-->
+
+<script type="module" src="dist/index.js"></script>
+<!--<script type="module" src="dist/index2.js"></script>-->
+</body>
+</html>
+
+
+<!-- npx tsc --watch -->
+<!-- npx serve -->
